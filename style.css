@@ -1,0 +1,213 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  height: 110%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #000000; /* Updated text color to a darker gray */
+  background-color: #d5eef5; /* Light gray background */
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #0a0186; /* Dark gray background for headings */
+  color: #fff; /* White text color */
+}
+
+hr {
+  border-top: 2px solid #00151F; /* Dark blue border */
+  border-bottom: none;
+  border-color: rgb(13, 0, 87);
+  margin-top: 0;
+}
+
+/* Container styles */
+.container {
+  text-align: center;
+  width: 40%;
+  height: 600px; /* Changed height to auto */
+  padding: 20px; /* Increased padding for better spacing */
+  margin: 3% auto; /* Center the container horizontally */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+}
+
+/* Form and registration box styles */
+.box {
+  display: flex;
+  text-align: center;/* Center align the content */
+}
+
+.f1{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+}
+
+.f2 {
+  display: flex;
+  padding: 10px;/* Slightly reduced padding */
+}
+
+.c {
+  display: flex;
+  margin-left: 15%; /* Center align checkboxes */
+}
+.c1 label {
+  text-align: center;
+  margin: 6px;
+  margin-top: 0;
+  display: flex;
+}
+
+/* Or, left align the gender labels */
+.c1 label {
+  margin: 6px;
+  margin-top: 0;
+  display: flex; /* You can adjust the margin as needed */
+}
+/* Registered students display styles */
+.display {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Changed height to auto */
+  width: 40%; /* Adjusted width for better alignment */
+  padding: 20px; /* Increased padding for better spacing */
+  margin: 3% auto; /* Center align the display box */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+}
+
+/* Individual data display styles */
+.div1 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.div1 div {
+  padding: 5px;
+}
+
+.display h2 {
+  margin-left: 0;
+  color: #333; /* Darker gray text color */
+}
+
+/* Form field styles */
+.d {
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #390b75; /* Dark blue border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Input field styles */
+.f1 input, select {
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  height: 35px;
+
+  padding: 10px;
+  width: 70%;
+}
+
+/* Input placeholder styles */
+.f1 input::placeholder {
+  font-weight: bold;
+  color: #4E4D4D; /* Slightly darker gray text color */
+}
+
+/* Image styles */
+#img {
+  height: auto; /* Changed to auto for image scaling */
+  background-color: #858585;
+  font-weight: bold;
+}
+
+/* Submit button styles */
+.submit {
+  background-color: #fff; /* White background */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  border: 0;
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+/* Image styles */
+.img {
+  width: 150px;
+  max-height: 120px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-right: 10px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 730px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .f1 {
+    flex-direction: column;
+  }
+  .f2 {
+    flex-direction: column;
+    padding: 10px; /* Slightly reduced padding */
+  }
+  .in {
+    width: 100%;
+  }
+  .display {
+    width: 100%;
+    align-items: center; /* Center align the content */
+  }
+  .display h2 {
+    margin-left: 0;
+  }
+  .c {
+    justify-content: center; /* Center align checkboxes */
+    margin-left: 0;
+  }
+  .submit {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .d {
+    flex-direction: column;
+  }
+  .img {
+    align-self: center;
+  }
+}
